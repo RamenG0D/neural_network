@@ -1,5 +1,3 @@
-pub mod utils;
-
 use data_lib::data_range;
 
 // hehe... this is the data the ai will be trained on

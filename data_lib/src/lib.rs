@@ -1,5 +1,5 @@
 use proc_macro::TokenStream;
-use syn::{parse_macro_input, Expr, ExprAssign};
+use syn::{parse_macro_input, Expr};
 use quote::{quote, ToTokens};
 
 // should place in the given value into an array of two elements and the second element should be the given value multiplied by two
