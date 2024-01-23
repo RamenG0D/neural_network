@@ -37,14 +37,12 @@ pub fn data_range(input: TokenStream) -> TokenStream {
             );
             let start = if let Expr::Lit(start) = *start {
                 let start = start.into_token_stream().to_string();
-                println!("start: {}", start);
                 start.parse().expect("Expected a number value")
             } else {
                 panic!("Expected a number value");
             };
             let end = if let Expr::Lit(end) = *end {
                 let end = end.into_token_stream().to_string();
-                println!("end: {}", end);
                 end.parse::<i32>().expect("Expected a number value") + 1
             } else {
                 panic!("Expected a number value");
